@@ -9,7 +9,8 @@ import Signin from "./pages/signin";
 import Login from "./pages/login";
 import Accueill from "./pages/accueill";
 import Inscrire from "./pages/inscrire";
-
+import Accueil from "./pages/accueill"; // Page principale (Accueil)
+import TripDetails from "./pages/TripDetails"; 
 const App = () => {
   return (
     <div>
@@ -22,6 +23,8 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/accueill" element={<Accueill />} />
         <Route path="/inscrire" element={<Inscrire />} />
+        <Route path="/trip/:id" element={<TripDetails />} />
+
       </Routes>
     </div>
   );

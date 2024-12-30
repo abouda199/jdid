@@ -1,0 +1,146 @@
+* Conteneur principal */
+.help-bubble {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Style de la bulle d'aide */
+.help-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #00aaff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.help-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Contenu de la bulle (image 1) */
+.bubble-content {
+  width: 250px;
+  background-color: #00aaff;
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.bubble-content h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.bubble-content p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.avatars {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.avatars img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+/* Fenêtre de chat (image 2) */
+.chat-box {
+  width: 300px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-header {
+  background: #00aaff;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-header h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.close-chat {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.chat-body {
+  padding: 15px;
+  flex: 1;
+  overflow-y: auto;
+  font-size: 14px;
+  color: #333;
+}
+
+.chat-footer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.chat-footer input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chat-footer button {
+  background: #00aaff;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.chat-footer button img {
+  width: 20px;
+  height: 20px;
+}
+
+.message-list {
+  margin-top: 10px;
+}
+
+.user-message {
+  background: #e6f7ff;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
